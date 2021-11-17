@@ -15,7 +15,6 @@ type Greetings = {
     infraAndOthers: string[]
     techs: Techs
     methodologies: string[]
-    
 }
 
 interface Me {
@@ -33,10 +32,10 @@ export class MyGreetings implements Me {
             code: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'C#', 'Java'],
             infraAndOthers: ['PostgreSQL', 'SQL Server', 'MongoDB', 'AWS', 'Azure', 'Active Directory'], 
             techs: {
-                alreadyIUsed: ['Vue.js', 'Nuxt.js', 'Angular 11', 'Express.js', 'Spring Boot', 'Grails', '.NET Core', ...this.forgotTechIUsed()],
-                iWantToUse: ['React.js', 'Next.js', 'Flutter', 'Elixir', 'Apache Kafka', 'Redis', ...this.forgotTechIWantUse()]
+                alreadyIUsed: ['Vue.js', 'Nuxt.js', 'Angular 11', 'Express.js', 'Spring Boot', 'Grails', '.NET Core'],
+                iWantToUse: ['React.js', 'Next.js']
             },
-            methodologies: ['Clean Architecture', 'TDD', 'DDD', 'S.O.L.I.D', 'Design patterns'],
+            methodologies: ['Micro-frontend', 'Clean Architecture', 'TDD', 'DDD', 'S.O.L.I.D', 'Design patterns'],
         }
         
         return greetings
@@ -44,28 +43,8 @@ export class MyGreetings implements Me {
     }
     
     bye (): string {
-        
         const message = "Nice to meet you! See u later 😉"
-        
         return message
-        
-    }
-    
-    private forgotTechIUsed (): string {
-        
-        const tech = "... I don't remember if there is 😅"
-        
-        return tech
-        
-    }
-    
-    private forgotTechIWantUse (): string {
-        
-        const tech = "Hmmm... maybe... oh, Svelte, I'm like Svelte"
-        
-        
-        return tech
-        
     }
     
 }
