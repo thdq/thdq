@@ -55,6 +55,6 @@ export class MyGreetings implements Me {
 
 ![Thiago's github stats](https://github-readme-stats.vercel.app/api?username=thdq&theme=ayu-mirage)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=thdq&theme=ayu-mirage)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=thdq&theme=ayu-mirage&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 
