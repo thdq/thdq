@@ -8,7 +8,7 @@ type Greetings = {
     age: number
     langs: string[]
     databases: string[]
-    frameworks: Techs
+    frameworks: string[]
     architectures: string[]
 }
 
