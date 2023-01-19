@@ -3,18 +3,13 @@
 ### About me
 
 ```ts
-type Techs = {
-    alreadyIUsed: string[]
-    iWantToUse: string[]
-}
-
 type Greetings = {
     name: string
     age: number
-    code: string[]
-    infraAndOthers: string[]
-    techs: Techs
-    methodologies: string[]
+    langs: string[]
+    databases: string[]
+    frameworks: Techs
+    architectures: string[]
 }
 
 interface Me {
@@ -28,14 +23,11 @@ export class MyGreetings implements Me {
         
         const greetings: Greetings = {
             name: "Thiago Oliveira",
-            age: 22,
-            code: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'C#', 'Java'],
-            infraAndOthers: ['PostgreSQL', 'SQL Server', 'MongoDB', 'AWS', 'Azure', 'Active Directory'], 
-            techs: {
-                alreadyIUsed: ['Vue.js', 'Nuxt.js', 'Angular 11', 'Express.js', 'Spring Boot', 'Grails', '.NET Core'],
-                iWantToUse: ['React.js', 'Next.js']
-            },
-            methodologies: ['Micro-frontend', 'Clean Architecture', 'TDD', 'DDD', 'S.O.L.I.D', 'Design patterns'],
+            age: 23,
+            langs: ['TypeScript', 'JavaScript', 'HTML', 'CSS', 'C#', 'Java'],
+            databases: ['PostgreSQL', 'SQL Server', 'MongoDB', 'MariaDB'],
+            frameworks: ['Vue.js', 'React.js', 'Next.js', 'NestJS', 'Grails', '.NET Core'],
+            architectures: ['Micro-frontend', 'Clean Architecture', 'Flux Arch', 'Modular'],
         }
         
         return greetings
